@@ -1,0 +1,46 @@
+{
+	"dictionary": [
+		{
+			"id": 1,
+			"lang": "ita",
+			"listaParole": [
+				"casa",
+				"automobile",
+				"cane",
+				"citta",
+				"tavolo",
+				"gatto",
+				"bottiglia",
+				"penna"
+			]
+		},
+		{
+			"id": 2,
+			"lang": "eng",
+			"listaParole": [
+				"home",
+				"car",
+				"dog",
+				"city",
+				"table",
+				"cat",
+				"bottle",
+				"pen"
+			]
+		},
+		{
+			"id": 3,
+			"lang": "fra",
+			"listaParole": [
+				"maison",
+				"voiture",
+				"chien",
+				"ville",
+				"table",
+				"chat",
+				"bouteille",
+				"stylo"
+			]
+		}
+	]
+}

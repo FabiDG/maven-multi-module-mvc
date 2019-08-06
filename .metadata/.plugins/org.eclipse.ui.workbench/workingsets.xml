@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1565076644535_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=my-ctrl-project/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=my-model-project/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=my-service-project/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=my-mvc-project/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1565076644557_1" label="Java Test Sources" name="Java Test Sources">
+<item elementID="=my-ctrl-project/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=my-model-project/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=my-service-project/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1565076675107_3" label="my-parent-project" name="my-parent-project">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/my-model-project" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/my-parent-project" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/my-ctrl-project" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/my-mvc-project" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/my-service-project" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1565076652118_2" label="Window Working Set" name="Aggregate for window 1565076652118"/>
+</workingSetManager>

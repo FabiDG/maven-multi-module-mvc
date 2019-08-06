@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>it.ats.app</groupId>
+  <artifactId>my-parent-project</artifactId>
+  <packaging>pom</packaging>
+  <version>1.4</version>
+  <name>my-parent-project</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+	<dependency>
+		<groupId>com.google.code.gson</groupId>
+		<artifactId>gson</artifactId>
+		<version>2.8.5</version>
+	</dependency>
+  </dependencies>
+<modules>
+  <module>my-model-project</module>
+  <module>my-service-project</module>
+  <module>my-ctrl-project</module>
+    <module>my-mvc-project</module>
+  </modules>
+</project><!--
+	Inheritance VS Aggregate dal sito Maven:
+
+	Inheritance and aggregation create a nice dynamic to control builds through a single, high-level POM. You often see projects that are both parents and aggregators. For example, the entire Maven core runs through a single base POM org.apache.maven:maven, so building the Maven project can be executed by a single command: mvn compile. However, an aggregator project and a parent project are both POM projects, they are not one and the same and should not be confused.
+
+	=> A POM project may be inherited from - but does not necessarily have - any modules that it aggregates. Conversely, a POM project may aggregate projects that do not inherit from it.
+-->

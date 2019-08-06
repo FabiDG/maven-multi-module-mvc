@@ -1,0 +1,41 @@
+package it.ats.app.mvcproject.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import it.ats.app.domain.Search;
+import it.ats.app.service.DictionaryService;
+
+@Controller
+public class HomeController {
+	
+	@Autowired
+	private DictionaryService dictionaryService; 
+
+	@RequestMapping(value="/")
+	public ModelAndView test(HttpServletResponse response) throws IOException{
+		return new ModelAndView("home");
+	}
+	
+	@RequestMapping("/my-mvc-project/processToView")
+	@ResponseBody
+	public ModelAndView processToView(HttpServletResponse response, @RequestParam String portion, @RequestParam String lang, @RequestParam boolean initial) {
+		Search search = new Search(portion, lang, 0, initial);		
+		
+		List<String> lista = dictionaryService.contains(search);
+		for(String parola: lista) {
+			System.out.println(parola);
+		}
+		
+		return new ModelAndView("results","lista",lista);
+	}
+}

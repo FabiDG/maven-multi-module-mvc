@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Tue Aug 06 14:40:11 CEST 2019
+org.eclipse.jst.j2ee.server\:my-mvc-project=C\:\\apache-tomcat-9.0.22\\wtpwebapps\\my-mvc-project
+org.eclipse.jst.j2ee.server\:my-model-project=C\:\\apache-tomcat-9.0.22\\wtpwebapps\\my-mvc-project\\WEB-INF\\lib\\my-model-project-1.0-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:my-service-project=C\:\\apache-tomcat-9.0.22\\wtpwebapps\\my-mvc-project\\WEB-INF\\lib\\my-service-project-1.0-SNAPSHOT.jar

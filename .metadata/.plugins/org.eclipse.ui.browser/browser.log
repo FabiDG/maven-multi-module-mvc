@@ -1,0 +1,5 @@
+
+ago 06, 2019 10:03:50.47 NEW SESSION
+ago 06, 2019 10:03:50.47 [14332:5968:0806/100350.457:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -101
+ago 06, 2019 10:13:24.45 [14332:5968:0806/101324.455:ERROR:native_message_process_host.cc(326)] Error when writing to Native Messaging host: -101
+ago 06, 2019 10:18:44.48 [14332:11468:0806/101844.479:ERROR:textfield.cc(1758)] NOT IMPLEMENTED

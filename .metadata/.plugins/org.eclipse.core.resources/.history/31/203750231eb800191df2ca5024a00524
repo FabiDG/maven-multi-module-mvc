@@ -1,0 +1,52 @@
+package it.ats.app.mvcproject.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import it.ats.app.domain.Search;
+import it.ats.app.service.DictionaryService;
+import it.ats.app.service.impl.DictionaryServiceImpl;
+
+@Controller
+public class DictionaryControllerImpl implements DictionaryController {
+
+	@Autowired
+	private DictionaryService dictionaryService;
+	
+	@Override
+	@RequestMapping("/process")
+	public List<String> process(String portion, String lang, boolean initial) {
+		Search search = new Search(portion, lang, 0, initial);		
+		
+		List<String> lista = dictionaryService.contains(search);
+		for(String parola: lista) {
+			System.out.println(parola);
+		}
+		
+		return lista;
+	}
+	
+	
+
+	@Override
+	public List<String> processLength(String lengthS, String lang) {
+		int length = Integer.parseInt(lengthS);
+		Search search = new Search("", lang, length, false);
+		
+		List<String> lista = dictionaryService.measures(search);
+		
+		if(lista != null) {
+			for(String parola: lista) {
+				System.out.println(parola);
+			}
+		}
+		
+		return lista;
+	}
+
+	
+
+}
